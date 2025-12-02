@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules - My TTRPG Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">TTRPG Builder</h1>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="builder.html">Character Builder</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="rules">
+        <h2>Rulebook</h2>
+        <section>
+            <h3 onclick="toggleSection('combat')">Combat Rules</h3>
+            <div id="combat" class="section-content">
+                <p>Initiative: Roll d20 + DEX. Attack: d20 + STR vs AC.</p>
+                <!-- Add more rules here -->
+            </div>
+        </section>
+        <section>
+            <h3 onclick="toggleSection('magic')">Magic Rules</h3>
+            <div id="magic" class="section-content">
+                <p>Spell slots based on level. Cast: d20 + INT vs DC.</p>
+                <!-- Add more -->
+            </div>
+        </section>
+        <!-- Add more sections as needed -->
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
